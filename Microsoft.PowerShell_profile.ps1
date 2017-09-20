@@ -1,7 +1,9 @@
+# Load Active Directory module
 import-module ActiveDirectory
 
-# Aliases
+# Aliases / Functions
 New-Alias ua Unlock-ADAccount
+function la {Search-ADAccount -lockedout}
 
 # Unlock AD account ################################################################
 # Usage: uad $username
